@@ -1,0 +1,45 @@
+# Copyright (C) 2024 Peter Pfeufer
+# This file is distributed under the GPL-3+.
+# Peter Pfeufer <info@ppfeufer.de>, 2024.
+msgid ""
+msgstr ""
+"Project-Id-Version: WordPress Tweaks 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/pp-wordpress-"
+"tweaks\n"
+"POT-Creation-Date: 2024-05-01T07:01:47+00:00\n"
+"PO-Revision-Date: 2024-05-01 17:05+0000\n"
+"Last-Translator: Peter Pfeufer <info@ppfeufer.de>\n"
+"Language-Team: German <https://weblate.ppfeufer.de/projects/"
+"wordpress-plugins/wordpress-tweaks/de/>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.5\n"
+"X-Domain: pp-wordpress-tweaks\n"
+
+#. Plugin Name of the plugin
+#: WordPressTweaks.php
+msgid "WordPress Tweaks"
+msgstr "WordPress-Tweaks"
+
+#. Plugin URI of the plugin
+#: WordPressTweaks.php
+msgid "https://github.com/ppfeufer/pp-wordpress-tweaks"
+msgstr "https://github.com/ppfeufer/pp-wordpress-tweaks"
+
+#. Description of the plugin
+#: WordPressTweaks.php
+msgid "A collection of personal tweaks for WordPress."
+msgstr "Eine Sammlung persönlicher Anpassungen für WordPress."
+
+#. Author of the plugin
+#: WordPressTweaks.php
+msgid "Peter Pfeufer"
+msgstr "Peter Pfeufer"
+
+#. Author URI of the plugin
+#: WordPressTweaks.php
+msgid "https://ppfeufer.de"
+msgstr "https://ppfeufer.de"
