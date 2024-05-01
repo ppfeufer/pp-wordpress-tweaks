@@ -6,8 +6,8 @@ msgstr ""
 "Project-Id-Version: WordPress Tweaks 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/pp-wordpress-"
 "tweaks\n"
-"POT-Creation-Date: 2024-05-01T07:01:47+00:00\n"
-"PO-Revision-Date: 2024-05-01 17:05+0000\n"
+"POT-Creation-Date: 2024-05-01T17:34:50+00:00\n"
+"PO-Revision-Date: 2024-05-01 17:44+0000\n"
 "Last-Translator: Peter Pfeufer <info@ppfeufer.de>\n"
 "Language-Team: German <https://weblate.ppfeufer.de/projects/"
 "wordpress-plugins/wordpress-tweaks/de/>\n"
@@ -36,8 +36,8 @@ msgstr "Eine Sammlung persönlicher Anpassungen für WordPress."
 
 #. Author of the plugin
 #: WordPressTweaks.php
-msgid "Peter Pfeufer"
-msgstr "Peter Pfeufer"
+msgid "H. Peter Pfeufer"
+msgstr "H. Peter Pfeufer"
 
 #. Author URI of the plugin
 #: WordPressTweaks.php
