@@ -23,8 +23,17 @@ class AutoUpdateMails implements TweaksInterface {
      * @access public
      */
     public function execute(): void {
-        add_filter(hook_name: 'auto_core_update_send_email', callback: '__return_false');
-        add_filter(hook_name: 'send_core_update_notification_email', callback: '__return_false');
-        add_filter(hook_name: 'auto_theme_update_send_email', callback: '__return_false');
+        add_filter(
+            hook_name: 'auto_core_update_send_email',
+            callback: '__return_false'
+        );
+        add_filter(
+            hook_name: 'send_core_update_notification_email',
+            callback: '__return_false'
+        );
+        add_filter(
+            hook_name: 'auto_theme_update_send_email',
+            callback: '__return_false'
+        );
     }
 }
