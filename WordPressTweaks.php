@@ -4,7 +4,7 @@
  * Plugin URI: https://github.com/ppfeufer/pp-wordpress-tweaks
  * Description: A collection of personal tweaks for WordPress.
  * Version: 1.0.0
- * Author: Peter Pfeufer
+ * Author: H. Peter Pfeufer
  * Author URI: https://ppfeufer.de
  * License: GPLv3
  * License URI: https://github.com/ppfeufer/pp-wordpress-tweaks/blob/master/LICENSE
