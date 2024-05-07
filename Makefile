@@ -22,17 +22,17 @@ help:
 	@echo "  pre-commit-checks  Run pre-commit checks"
 
 activate:
-	$(wp_cli) plugin activate \
+	@$(wp_cli) plugin activate \
 		$(plugin_slug) \
 		--path=$(wp_path)
 
 deactivate:
-	$(wp_cli) plugin deactivate \
+	@$(wp_cli) plugin deactivate \
 		$(plugin_slug) \
 		--path=$(wp_path)
 
 pot:
-	$(wp_cli) i18n make-pot \
+	@$(wp_cli) i18n make-pot \
 		. \
 		l10n/$(plugin_slug).pot \
 		--slug=$(plugin_slug) \
@@ -40,10 +40,10 @@ pot:
 		--include="/"
 
 clear-transient:
-	$(wp_cli) transient delete \
+	@$(wp_cli) transient delete \
 		--all \
 		--path=$(wp_path)
 
 pre-commit-checks:
 	@echo "Running pre-commit checks"
-	pre-commit run --all-files
+	@pre-commit run --all-files
