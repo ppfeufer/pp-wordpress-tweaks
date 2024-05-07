@@ -35,6 +35,10 @@ Section Order:
 ### Security
 -->
 
+### Changed
+
+- Use anonymous functions for the `AutoUpdateMails` tweaks
+
 ## \[1.0.0\] - 2024-05-01
 
 **INITIAL RELEASE**
