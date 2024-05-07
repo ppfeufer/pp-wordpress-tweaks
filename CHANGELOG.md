@@ -35,6 +35,8 @@ Section Order:
 ### Security
 -->
 
+## \[1.1.0\] - 2024-05-07
+
 ### Changed
 
 - Use anonymous functions for the `AutoUpdateMails` tweaks
