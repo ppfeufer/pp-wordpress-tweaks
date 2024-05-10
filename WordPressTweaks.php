@@ -21,5 +21,5 @@ require_once trailingslashit(value: __DIR__) . 'Sources/autoloader.php';
 require_once trailingslashit(value: __DIR__) . 'Sources/Libs/autoload.php';
 // phpcs:enable
 
-// Load the plugin's main class.
+// Load the plugins' main class.
 (new Main())->init();
