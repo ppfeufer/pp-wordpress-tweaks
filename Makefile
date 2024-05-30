@@ -8,6 +8,7 @@ plugin_name = WordPress Tweaks
 plugin_slug = pp-wordpress-tweaks
 
 # Help message for the Makefile
+.PHONY: help
 help::
 	@echo "$(TEXT_BOLD)$(plugin_name)$(TEXT_BOLD_END) Makefile"
 	@echo ""
