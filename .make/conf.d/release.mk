@@ -1,4 +1,4 @@
-# Create a new release archive and upload to the Qbus WP release server
+# Create a new release archive
 release-archive:
 	@echo "Creating a new release archive …"
 	@rm -f $(plugin_slug).zip
@@ -15,8 +15,8 @@ release-archive:
 	@rm -rf $(plugin_slug)/
 
 help::
-	@echo "  $(FONT_UNDERLINE)Release:$(FONT_UNDERLINE_END)"
-	@echo "    release-archive           Create a new release archive and upload to the Qbus WP release server."
+	@echo "  $(TEXT_UNDERLINE)Release:$(TEXT_UNDERLINE_END)"
+	@echo "    release-archive           Create a release archive."
 	@echo "                              The release archive ($(plugin_slug).zip) will be created in the root"
 	@echo "                              directory of the plugin."
 	@echo ""
