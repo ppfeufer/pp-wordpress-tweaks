@@ -113,18 +113,18 @@ repos:
           - --report=full
 
   - repo: https://github.com/eslint/eslint
-    rev: v9.2.0
+    rev: v9.4.0
     hooks:
       - id: eslint
         name: ESLint
         description: This hook checks for problems in JavaScript code.
 #        additional_dependencies:
 #          # eslint itself needs to be here when using additional_dependencies.
-#          - eslint@8.56.0  # https://github.com/eslint/eslint/releases/latest
-#          - globals@13.24.0  # https://github.com/sindresorhus/globals/releases/latest
+#          - eslint@9.4.0  # https://github.com/eslint/eslint/releases/latest
+#          - globals@15.3.0  # https://github.com/sindresorhus/globals/releases/latest
 
   - repo: https://github.com/thibaudcolas/pre-commit-stylelint
-    rev: v16.5.0
+    rev: v16.6.1
     hooks:
       - id: stylelint
         name: Stylelint
@@ -133,8 +133,9 @@ repos:
           - --formatter=compact
         additional_dependencies:
           # stylelint itself needs to be here when using additional_dependencies.
-          - stylelint@16.5.0  # https://github.com/stylelint/stylelint/releases/latest
+          - stylelint@16.6.1  # https://github.com/stylelint/stylelint/releases/latest
           - stylelint-config-standard@36.0.0  # https://github.com/stylelint/stylelint-config-standard/releases/latest
+#          - stylelint-config-standard-scss@13.0.0  # https://github.com/stylelint-scss/stylelint-config-standard-scss/releases/latest
 
   - repo: https://github.com/editorconfig-checker/editorconfig-checker.python
     rev: 2.7.3
@@ -155,18 +156,20 @@ repos:
           - mdformat-shfmt==0.1.0  # Mdformat plugin to format shell code blocks » https://github.com/hukkin/mdformat-shfmt/tags
 
   - repo: https://github.com/python-jsonschema/check-jsonschema
-    rev: 0.28.2
+    rev: 0.28.4
     hooks:
       - id: check-github-actions
         name: Check GitHub Actions
         description: This hook checks that GitHub Actions files are valid.
         args:
           - --verbose
+
       - id: check-github-workflows
         name: Check GitHub Workflows
         description: This hook checks that GitHub Workflows files are valid.
         args:
           - --verbose
+
       - id: check-dependabot
         name: Check Dependabot Configuration
         description: This hook checks that Dependabot configuration files are valid.
