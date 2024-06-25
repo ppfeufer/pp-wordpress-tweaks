@@ -8,7 +8,7 @@ namespace WordPress\Ppfeufer\Plugin\WordPressTweaks;
  *
  * @param string $className The name of the class to load
  * @return void
- * @package WordPress\Ppfeufer\Plugin\WpMemoryUsage
+ * @package WordPress\Ppfeufer\Plugin\WordPressTweaks
  */
 spl_autoload_register(callback: static function (string $className): void {
     $myNamespace = 'WordPress\\Ppfeufer\\Plugin\\WordPressTweaks';

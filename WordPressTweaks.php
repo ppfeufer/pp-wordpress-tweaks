@@ -16,7 +16,7 @@ namespace WordPress\Ppfeufer\Plugin\WordPressTweaks;
 
 // phpcs:disable
 define(
-    constant_name: __NAMESPACE__ . '\PP_WP_TWEAKS_PLUGIN_DIR',
+    constant_name: __NAMESPACE__ . '\PLUGIN_DIR',
     value: plugin_dir_path(file: __FILE__)
 );
 

@@ -91,7 +91,7 @@ class Main {
     public function doUpdateCheck(): void {
         PucFactory::buildUpdateChecker(
             metadataUrl: 'https://github.com/ppfeufer/pp-wordpress-tweaks/',
-            fullPath: PP_WP_TWEAKS_PLUGIN_DIR . 'WordPressTweaks.php',
+            fullPath: PLUGIN_DIR . 'WordPressTweaks.php',
             slug: 'pp-wordpress-tweaks'
         )->getVcsApi()->enableReleaseAssets();
     }
