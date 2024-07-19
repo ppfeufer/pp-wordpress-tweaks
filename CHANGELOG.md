@@ -35,6 +35,8 @@ Section Order:
 ### Security
 -->
 
+## \[1.2.0\] - 2024-07-19
+
 ### Changed
 
 - Put constants under our namespace to avoid potential conflicts

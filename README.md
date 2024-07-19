@@ -4,12 +4,11 @@ This is a simple collection of tweaks for WordPress that I use on my own sites. 
 
 ______________________________________________________________________
 
-<!-- mdformat-toc start --slug=github --maxlevel=6 --minlevel=1 -->
+<!-- mdformat-toc start --slug=github --maxlevel=6 --minlevel=2 -->
 
-- [My WordPress Tweaks](#my-wordpress-tweaks)
-  - [Tweaks](#tweaks)
-    - [Disable emails on auto-update](#disable-emails-on-auto-update)
-  - [Installation](#installation)
+- [Tweaks](#tweaks)
+  - [Disable emails on auto-update](#disable-emails-on-auto-update)
+- [Installation](#installation)
 
 <!-- mdformat-toc end -->
 
@@ -23,7 +22,7 @@ This tweak disables the mails that WordPress sends out when it updates itself or
 
 ## Installation<a name="installation"></a>
 
-1. Download the latest release from the [releases page](https://github.com/ppfeufer/pp-wordpress-tweaks/releases).
+1. Download the latest `pp-wordpress-tweaks.zip` from the [release page](https://github.com/ppfeufer/pp-wordpress-tweaks/releases/latest).
 1. Go to your WordPress admin area and navigate to `Plugins` -> `Add New`.
 1. Click on `Upload Plugin` and select the downloaded ZIP file.
 1. Click on `Install Now` and then on `Activate`.
