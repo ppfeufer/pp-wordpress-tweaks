@@ -38,6 +38,7 @@ Section Order:
 ### Changed
 
 - Put constants under our namespace to avoid potential conflicts
+- Disable core update emails only on successful updates, failed core updates will still send emails
 
 ## \[1.1.0\] - 2024-05-07
 
