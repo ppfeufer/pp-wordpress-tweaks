@@ -31,7 +31,8 @@ class AutoUpdateMails implements TweaksInterface {
                 object $coreUpdate,
                 object $result
             ): bool {
-                return false;
+                // Disable core update emails only on successful updates.
+                return !(!empty($type) && $type === 'success');
             },
         );
         add_filter(
@@ -41,6 +42,7 @@ class AutoUpdateMails implements TweaksInterface {
                 object $plugin,
                 object $result
             ): bool {
+                // Disable plugin update emails.
                 return false;
             }
         );
@@ -51,6 +53,7 @@ class AutoUpdateMails implements TweaksInterface {
                 object $theme,
                 object $result
             ): bool {
+                // Disable theme update emails.
                 return false;
             }
         );
