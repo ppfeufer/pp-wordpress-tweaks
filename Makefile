@@ -6,6 +6,7 @@
 # Plugin name and slug
 plugin_name = WordPress Tweaks
 plugin_slug = pp-wordpress-tweaks
+plugin_file = WordPressTweaks.php
 
 # Help message for the Makefile
 .PHONY: help
