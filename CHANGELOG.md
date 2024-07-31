@@ -35,6 +35,10 @@ Section Order:
 ### Security
 -->
 
+### Changed
+
+- Merge tweaks from `WP Basic Security` plugin into this plugin, so the `WP Basic Security` plugin can be retired.
+
 ## \[1.2.0\] - 2024-07-19
 
 ### Changed

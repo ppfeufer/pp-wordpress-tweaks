@@ -51,6 +51,7 @@ class Main {
      */
     public function init(): void {
         $this->loadTextDomain();
+        $this->loadSettings();
         $this->loadTweaks();
         $this->doUpdateCheck();
     }
@@ -71,6 +72,17 @@ class Main {
     }
 
     /**
+     * Load the settings
+     *
+     * @return void
+     * @access public
+     * @uses Settings
+     */
+    public function loadSettings(): void {
+        new Settings;
+    }
+
+    /**
      * Load the tweaks
      *
      * @return void
@@ -78,7 +90,11 @@ class Main {
      * @access public
      */
     public function loadTweaks(): void {
-        new Tweaks\AutoUpdateMails;
+        $tweakClasses = Tweaks::getInstance()->getTweakClasses();
+
+        foreach ($tweakClasses as $tweakClass) {
+            $tweakClass::getInstance()->init();
+        }
     }
 
     /**

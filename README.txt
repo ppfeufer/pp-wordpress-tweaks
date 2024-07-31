@@ -17,8 +17,8 @@ I've decided to package them up and share them with the world. I hope you find t
 
 == Installation ==
 
-1. Download the latest release from the [releases page](https://github.com/ppfeufer/pp-wordpress-tweaks/releases).
-2. Go to your WordPress admin area and navigate to `Plugins` -> `Add New`.
+1. Download the [latest version](https://github.com/ppfeufer/pp-wordpress-tweaks/releases/latest/download/pp-wordpress-tweaks.zip).
+2. Go to your WordPress admin area and navigate to `Plugins` → `Add New`.
 3. Click on `Upload Plugin` and select the downloaded ZIP file.
 4. Click on `Install Now` and then on `Activate`.
 5. Done!
