@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Enable/Disable Auto Update Mails
+ * Removing the debug from html output when Enfold theme is used
  */
 
 namespace WordPress\Ppfeufer\Plugin\WordPressTweaks\Tweaks;
@@ -10,11 +10,11 @@ use WordPress\Ppfeufer\Plugin\WordPressTweaks\Interfaces\TweakInterface;
 use WordPress\Ppfeufer\Plugin\WordPressTweaks\Singletons\GenericSingleton;
 
 /**
- * Enable/Disable Auto Update Mails
+ * Removing the debug from html output when Enfold theme is used
  *
- * @package WordPress\Ppfeufer\Plugin\WordPressTweaks\Tweaks
+ * @package WordPress\Ppfeufer\Plugin\WpBasicSecurity\Libs
  */
-class AutoUpdateMails extends GenericSingleton implements TweakInterface {
+class EnfoldTheme extends GenericSingleton implements TweakInterface {
     /**
      * The option group for the tweak
      *
@@ -36,7 +36,7 @@ class AutoUpdateMails extends GenericSingleton implements TweakInterface {
      * @var string TWEAK_FIELD_ID The field ID of the tweak in the settings.
      * @scope private
      */
-    private const TWEAK_FIELD_ID = 'tweak_autoupdate_email';
+    private const TWEAK_FIELD_ID = 'tweak_enfold_theme';
 
     /**
      * Constructor
@@ -63,9 +63,9 @@ class AutoUpdateMails extends GenericSingleton implements TweakInterface {
     public function getSettings(): array {
         return [
             'id' => $this::TWEAK_FIELD_ID,
-            'title' => __('Autoupdate email', 'pp-wordpress-tweaks'),
+            'title' => __('Enfold debug', 'pp-wordpress-tweaks'),
             'desc' => __(
-                'Disable the email notifications for automatic updates. This will only disable the emails for successful updates.',
+                'Remove the debug from html output when the Enfold theme is used',
                 'pp-wordpress-tweaks'
             ),
             'type' => 'checkbox',
@@ -74,46 +74,35 @@ class AutoUpdateMails extends GenericSingleton implements TweakInterface {
     }
 
     /**
-     * Initialize the filters for the tweak
+     * Execute the filters and so on
      *
      * @return void
-     * @since 1.0.0
      * @access public
      */
     public function execute(): void {
-        add_filter(
-            hook_name: 'auto_core_update_send_email',
-            callback: static function (
-                bool $send,
-                string $type,
-                object $coreUpdate,
-                object $result
-            ): bool {
-                // Disable core update emails only on successful updates.
-                return !(!empty($type) && $type === 'success');
-            },
+        add_action(
+            hook_name: 'wp_loaded',
+            callback: [$this, 'removeAviaDebug'],
+            priority: 9999
         );
-        add_filter(
-            hook_name: 'auto_plugin_update_send_email',
-            callback: static function (
-                bool $send,
-                object $plugin,
-                object $result
-            ): bool {
-                // Disable plugin update emails.
-                return false;
-            }
+    }
+
+    /**
+     * Remove the Debug Comment when Enfold Theme is used.
+     *
+     * @return void
+     * @access public
+     */
+    public function removeAviaDebug(): void {
+        remove_action(
+            hook_name: 'wp_head',
+            callback: 'avia_debugging_info',
+            priority: 9999999
         );
-        add_filter(
-            hook_name: 'auto_theme_update_send_email',
-            callback: static function (
-                bool $send,
-                object $theme,
-                object $result
-            ): bool {
-                // Disable theme update emails.
-                return false;
-            }
+        remove_action(
+            hook_name: 'admin_print_scripts',
+            callback: 'avia_debugging_info',
+            priority: 9999999
         );
     }
 }
