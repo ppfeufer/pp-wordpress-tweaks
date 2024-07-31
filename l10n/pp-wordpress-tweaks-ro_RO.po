@@ -7,11 +7,11 @@ msgstr ""
 "Project-Id-Version: WordPress Tweaks 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/pp-wordpress-"
 "tweaks\n"
-"POT-Creation-Date: 2024-05-01T17:34:50+00:00\n"
+"POT-Creation-Date: 2024-07-31T09:09:33+00:00\n"
 "PO-Revision-Date: 2024-05-05 05:34+0000\n"
 "Last-Translator: Peter Pfeufer <info@ppfeufer.de>\n"
-"Language-Team: Romanian <https://weblate.ppfeufer.de/projects/"
-"wordpress-plugins/wordpress-tweaks/ro/>\n"
+"Language-Team: Romanian <https://weblate.ppfeufer.de/projects/wordpress-"
+"plugins/wordpress-tweaks/ro/>\n"
 "Language: ro_RO\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -45,3 +45,125 @@ msgstr "H. Peter Pfeufer"
 #: WordPressTweaks.php
 msgid "https://ppfeufer.de"
 msgstr "https://ppfeufer.de"
+
+#: Settings/WordPressTweaksSettings.php:15
+msgid "Available Tweaks"
+msgstr ""
+
+#: Settings/WordPressTweaksSettings.php:16
+msgid "Select which tweaks you want to apply …"
+msgstr ""
+
+#: Sources/Settings.php:73
+msgid "WP Tweaks Settings"
+msgstr ""
+
+#: Sources/Settings.php:74
+msgid "WP Tweaks"
+msgstr ""
+
+#: Sources/Settings.php:91
+msgid "Plugin Settings"
+msgstr ""
+
+#: Sources/Tweaks/AutoUpdateMails.php:66
+msgid "Autoupdate email"
+msgstr ""
+
+#: Sources/Tweaks/AutoUpdateMails.php:67
+msgid ""
+"Disable the email notifications for automatic updates. This will only "
+"disable the emails for successful updates."
+msgstr ""
+
+#: Sources/Tweaks/Canonical.php:66
+msgid "Canonical link"
+msgstr ""
+
+#: Sources/Tweaks/Canonical.php:67
+msgid "Remove the canonical link from the `<head>` section"
+msgstr ""
+
+#: Sources/Tweaks/Emoji.php:66
+msgid "Emoji support"
+msgstr ""
+
+#: Sources/Tweaks/Emoji.php:67
+msgid "Disable Emoji support"
+msgstr ""
+
+#: Sources/Tweaks/EnfoldTheme.php:66
+msgid "Enfold debug"
+msgstr ""
+
+#: Sources/Tweaks/EnfoldTheme.php:67
+msgid "Remove the debug from html output when the Enfold theme is used"
+msgstr ""
+
+#: Sources/Tweaks/GeneratorName.php:66
+msgid "Generator name"
+msgstr ""
+
+#: Sources/Tweaks/GeneratorName.php:67
+msgid ""
+"Remove the `<meta name=\"generator\" content=\"WordPress x.y.z\" />` tag "
+"from the `<head>` section"
+msgstr ""
+
+#: Sources/Tweaks/Links.php:66
+msgid "Meta links tags"
+msgstr ""
+
+#: Sources/Tweaks/Links.php:67
+msgid ""
+"Remove some definitions from the `<head>` section, like XMLRPC header, RSS "
+"feeds and WLW Manifests"
+msgstr ""
+
+#: Sources/Tweaks/Login.php:66
+msgid "Login error messages"
+msgstr ""
+
+#: Sources/Tweaks/Login.php:67
+msgid "Remove the login error messages"
+msgstr ""
+
+#: Sources/Tweaks/Login.php:93
+msgid "Ups! Something went wrong!"
+msgstr ""
+
+#: Sources/Tweaks/Oembed.php:66
+msgid "oEmbed"
+msgstr ""
+
+#: Sources/Tweaks/Oembed.php:67
+msgid "Disable oEmbed discovery"
+msgstr ""
+
+#: Sources/Tweaks/Pingback.php:66
+msgid "Pingback header"
+msgstr ""
+
+#: Sources/Tweaks/Pingback.php:67
+msgid "Remove the X-Pingback header"
+msgstr ""
+
+#: Sources/Tweaks/VersionStrings.php:66
+msgid "Version strings"
+msgstr ""
+
+#: Sources/Tweaks/VersionStrings.php:67
+msgid "Remove the WordPress version from the scripts and styles"
+msgstr ""
+
+#: Sources/Tweaks/WooCommerce.php:67
+msgid "Remove the WooCommerce generator tag"
+msgstr ""
+
+#: Sources/Tweaks/YoutubeEmbed.php:67
+msgid "YouTube embed (no cookie)"
+msgstr ""
+
+#: Sources/Tweaks/YoutubeEmbed.php:68
+msgid "Change the YouTube embed to use the no-cookie domain"
+msgstr ""
