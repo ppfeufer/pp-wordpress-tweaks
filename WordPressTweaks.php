@@ -8,13 +8,13 @@
  * @author H. Peter Pfeufer
  * @copyright 2021 H. Peter Pfeufer
  * @license GPL-3.0-or-later
- * @version 1.2.0
+ * @version 1.3.0
  *
  * @wordpress-plugin
  * Plugin Name: WordPress Tweaks
  * Plugin URI: https://github.com/ppfeufer/pp-wordpress-tweaks
  * Description: A collection of personal tweaks for WordPress.
- * Version: 1.2.0
+ * Version: 1.3.0
  * Author: H. Peter Pfeufer
  * Author URI: https://ppfeufer.de
  * License: GPLv3
