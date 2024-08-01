@@ -2,14 +2,30 @@
 
 namespace WordPress\Ppfeufer\Plugin\WordPressTweaks\Singletons;
 
+use RuntimeException;
+
 /**
  * General Singleton
  *
- * @package WordPress\Ppfeufer\Plugin\WpBasicSecurity\Singletons
+ * @package WordPress\Ppfeufer\Plugin\WordPressTweaks\Singletons
  */
 class GenericSingleton {
     /**
+     * Holds the instances of this class or subclasses.
+     *
+     * @var array<class-string<static>, static> $instances The instances of this class or subclasses.
+     * @scope protected
+     */
+    protected static array $instances = [];
+
+    /**
      * Constructor
+     *
+     * A protected constructor to prevent creating a new instance of the
+     * Singleton via the `new` operator from outside of this class.
+     *
+     * @return void
+     * @scope protected
      */
     protected function __construct() {
     }
@@ -17,21 +33,40 @@ class GenericSingleton {
     /**
      * Get instance.
      *
-     * @return GenericSingleton|array
+     * Returns the *Singleton* instance of this class.
+     *
+     * @return static The *Singleton* instance.
      * @scope public
      */
-    final public static function getInstance(): GenericSingleton|array {
-        static $instances = [];
-
+    public static function getInstance(): static {
         $calledClass = static::class;
 
-        if (!isset($instances[$calledClass])) {
-            $instances[$calledClass] = new $calledClass();
+        if (!isset(self::$instances[$calledClass])) {
+            self::$instances[$calledClass] = new $calledClass();
         }
 
-        return $instances[$calledClass];
+        return self::$instances[$calledClass];
     }
 
-    final public function __clone() {
+    /**
+     * Prevent the instance from being cloned.
+     *
+     * @return void
+     * @scope private
+     */
+    private function __clone() {
+    }
+
+    /**
+     * Prevent from being deserialized.
+     *
+     * This method is public to comply with the PHP internals handling of deserialization.
+     *
+     * @return void
+     * @throws RuntimeException
+     * @scope public
+     */
+    public function __wakeup() {
+        throw new RuntimeException(message: 'Cannot deserialize a singleton.');
     }
 }
