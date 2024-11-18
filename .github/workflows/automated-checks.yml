@@ -34,11 +34,11 @@ jobs:
 #        with:
 #          composer-options: install --no-dev --no-interaction --no-progress --no-suggest --optimize-autoloader --classmap-authoritative
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: ${{ env.PYTHON_VERSION }}
-          check-latest: true
+#      - name: Set up Python
+#        uses: actions/setup-python@v5
+#        with:
+#          python-version: ${{ env.PYTHON_VERSION }}
+#          check-latest: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
