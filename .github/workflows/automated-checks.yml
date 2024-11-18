@@ -1,5 +1,9 @@
 name: Automated Checks
 
+env:
+  NODE_VERSION: 22 # [LTS] End of Life: 30 Apr 2027 (https://endoflife.date/nodejs)
+  PYTHON_VERSION: 3.12
+
 on:
   push:
     branches:
@@ -33,13 +37,13 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: '3.11'
+          python-version: ${{ env.PYTHON_VERSION }}
           check-latest: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: ${{ env.NODE_VERSION }}
       - run: npm install
 
       - name: Run Pre Commit Checks
