@@ -24,7 +24,7 @@ https://docs.github.com/assets/cb-41128/mw-1440/images/help/writing/alerts-rende
 
 ## Changes in Chronological Order
 
-### \[In Development\] - Unreleased
+### [In Development] - Unreleased
 
 <!--
 Section Order:
@@ -37,32 +37,32 @@ Section Order:
 ### Security
 -->
 
-### \[1.3.1\] - 2024-10-16
+### [1.3.1] - 2024-10-16
 
 #### Changed
 
 - Tested compatibility to WordPress 6.7
 
-### \[1.3.0\] - 2024-07-31
+### [1.3.0] - 2024-07-31
 
 #### Changed
 
 - Merge tweaks from `WP Basic Security` plugin into this plugin, so the `WP Basic Security` plugin can be retired.
 
-### \[1.2.0\] - 2024-07-19
+### [1.2.0] - 2024-07-19
 
 #### Changed
 
 - Put constants under our namespace to avoid potential conflicts
 - Disable core update emails only on successful updates, failed core updates will still send emails
 
-### \[1.1.0\] - 2024-05-07
+### [1.1.0] - 2024-05-07
 
 #### Changed
 
 - Use anonymous functions for the `AutoUpdateMails` tweaks
 
-### \[1.0.0\] - 2024-05-01
+### [1.0.0] - 2024-05-01
 
 **INITIAL RELEASE**
 
