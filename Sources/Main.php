@@ -32,11 +32,7 @@ class Main {
      * @return void
      */
     public function __construct() {
-        /**
-         * Initializing Variables
-         */
-        $this->textDomain = 'pp-wordpress-tweaks';
-        $this->localizationDirectory = basename(path: __DIR__) . '/l10n/';
+        $this->init();
     }
 
     /**
@@ -50,25 +46,9 @@ class Main {
      * @uses doUpdateCheck()
      */
     public function init(): void {
-        $this->loadTextDomain();
         $this->loadSettings();
         $this->loadTweaks();
         $this->doUpdateCheck();
-    }
-
-    /**
-     * Load the text domain
-     *
-     * @return void
-     * @since 1.0.0
-     * @access public
-     * @uses load_plugin_textdomain()
-     */
-    public function loadTextDomain(): void {
-        load_plugin_textdomain(
-            domain: $this->textDomain,
-            plugin_rel_path: $this->localizationDirectory
-        );
     }
 
     /**

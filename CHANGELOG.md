@@ -37,6 +37,10 @@ Section Order:
 ### Security
 -->
 
+### Fixed
+
+- Move `load_plugin_textdomain` to the right hook
+
 ### [1.3.1] - 2024-10-16
 
 #### Changed
