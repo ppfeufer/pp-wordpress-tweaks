@@ -45,5 +45,14 @@ require_once trailingslashit(value: __DIR__) . 'Sources/autoloader.php';
 require_once trailingslashit(value: __DIR__) . 'Sources/Libs/autoload.php';
 // phpcs:enable
 
+// Load the text domain.
+add_action(hook_name: 'init', callback: static function () {
+    load_plugin_textdomain(
+        domain: 'pp-wordpress-tweaks',
+        deprecated: false,
+        plugin_rel_path: basename(path: __DIR__) . '/l10n/'
+    );
+});
+
 // Load the plugin's main class.
-(new Main())->init();
+new Main();
