@@ -18,7 +18,7 @@ class Tweaks extends GenericSingleton {
      */
     public function getTweakClasses(): array {
         $tweakClasses = [];
-        $files = glob(pattern: PLUGIN_DIR . 'Sources/Tweaks/*.php');
+        $files = glob(pattern: PLUGIN_DIR_PATH . 'Sources/Tweaks/*.php');
 
         foreach ($files as $file) {
             $class = str_replace(search: '.php', replace: '', subject: basename($file));
