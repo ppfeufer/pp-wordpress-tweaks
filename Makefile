@@ -8,6 +8,10 @@ plugin_name = WordPress Tweaks
 plugin_slug = pp-wordpress-tweaks
 plugin_file = WordPressTweaks.php
 
+# Git repository URLs
+plugin_repo_url = https://github.com/ppfeufer/${plugin_slug}
+plugin_issues_url = $(plugin_repo_url)/issues
+
 # Help message for the Makefile
 .PHONY: help
 help::
