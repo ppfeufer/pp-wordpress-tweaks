@@ -2,6 +2,11 @@
 
 namespace WordPress\Ppfeufer\Plugin\WordPressTweaks\Interfaces;
 
+/**
+ * Tweak interface
+ *
+ * @package WordPress\Ppfeufer\Plugin\WordPressTweaks\Interfaces
+ */
 interface TweakInterface {
     /**
      * Initialize the class

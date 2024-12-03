@@ -26,7 +26,7 @@ class Settings {
      */
     public function __construct() {
         $this->wpsf = new WordPressSettingsFramework(
-            settings_file: PLUGIN_DIR . 'Settings/WordPressTweaksSettings.php',
+            settings_file: PLUGIN_DIR_PATH . 'Settings/WordPressTweaksSettings.php',
             option_group: 'pp-wordpress-tweaks'
         );
 
@@ -49,7 +49,7 @@ class Settings {
 
         // Add a settings link to plugin actions.
         add_action(
-            hook_name: 'plugin_action_links_' . PLUGIN_FILE,
+            hook_name: 'plugin_action_links_' . PLUGIN_BASENAME,
             callback: [$this, 'pluginActionsLink']
         );
 

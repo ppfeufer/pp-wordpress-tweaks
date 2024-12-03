@@ -2,6 +2,13 @@
 
 use WordPress\Ppfeufer\Plugin\WordPressTweaks\Tweaks;
 
+/**
+ * WordPress Tweaks settings
+ *
+ * @param array $wpsf_settings The settings fields
+ *
+ * @return array
+ */
 function wp_tweaks_settings(array $wpsf_settings): array {
     $tweakClasses = Tweaks::getInstance()->getTweakClasses();
     $settingsFields = [];

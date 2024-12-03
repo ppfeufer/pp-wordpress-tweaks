@@ -28,31 +28,34 @@
 namespace WordPress\Ppfeufer\Plugin\WordPressTweaks;
 
 // phpcs:disable
+// Plugin directory path
 define(
-    constant_name: __NAMESPACE__ . '\PLUGIN_DIR',
+    constant_name: __NAMESPACE__ . '\PLUGIN_DIR_PATH',
     value: plugin_dir_path(file: __FILE__)
 );
+
+// Plugin directory relative path
 define(
-    constant_name: __NAMESPACE__ . '\PLUGIN_URI',
+    constant_name: __NAMESPACE__ . '\PLUGIN_REL_PATH',
+    value: dirname(plugin_basename(__FILE__))
+);
+
+// Plugin directory URL
+define(
+    constant_name: __NAMESPACE__ . '\PLUGIN_DIR_URL',
     value: plugin_dir_url(file: __FILE__)
 );
+
+// Plugin basename
 define(
-    constant_name: __NAMESPACE__ . '\PLUGIN_FILE',
+    constant_name: __NAMESPACE__ . '\PLUGIN_BASENAME',
     value: plugin_basename(file: __FILE__)
 );
 
+// Include the autoloader and the libraries autoloader
 require_once trailingslashit(value: __DIR__) . 'Sources/autoloader.php';
 require_once trailingslashit(value: __DIR__) . 'Sources/Libs/autoload.php';
 // phpcs:enable
-
-// Load the text domain.
-add_action(hook_name: 'init', callback: static function () {
-    load_plugin_textdomain(
-        domain: 'pp-wordpress-tweaks',
-        deprecated: false,
-        plugin_rel_path: basename(path: __DIR__) . '/l10n/'
-    );
-});
 
 // Load the plugin's main class.
 new Main();
