@@ -21,10 +21,12 @@ class Tweaks extends GenericSingleton {
         $files = glob(pattern: PLUGIN_DIR_PATH . 'Sources/Tweaks/*.php');
 
         foreach ($files as $file) {
-            $class = str_replace(search: '.php', replace: '', subject: basename($file));
-            $class = '\\WordPress\\Ppfeufer\\Plugin\\WordPressTweaks\\Tweaks\\' . $class;
+            $class = '\\WordPress\\Ppfeufer\\Plugin\\WordPressTweaks\\Tweaks\\' . basename(
+                path: $file,
+                suffix: '.php'
+            );
 
-            if (class_exists($class)) {
+            if (class_exists(class: $class)) {
                 $tweakClasses[] = $class;
             }
         }
