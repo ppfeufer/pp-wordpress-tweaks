@@ -10,12 +10,10 @@ use WordPress\Ppfeufer\Plugin\WordPressTweaks\Tweaks;
  * @return array
  */
 function wp_tweaks_settings(array $wpsf_settings): array {
-    $tweakClasses = Tweaks::getInstance()->getTweakClasses();
-    $settingsFields = [];
-
-    foreach ($tweakClasses as $tweakClass) {
-        $settingsFields[] = $tweakClass::getInstance()->getSettings();
-    }
+    $settingsFields = array_map(
+        static fn($tweakClass) => $tweakClass::getInstance()->getSettings(),
+        Tweaks::getInstance()->getTweakClasses()
+    );
 
     $wpsf_settings[] = [
         'section_id' => 'pp-wordpress-tweaks',

@@ -41,6 +41,10 @@ Section Order:
 
 - Move `load_plugin_textdomain` to the right hook
 
+### Changed
+
+- Some code optimizations
+
 ### [1.3.1] - 2024-10-16
 
 #### Changed
