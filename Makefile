@@ -7,6 +7,7 @@
 plugin_name = WordPress Tweaks
 plugin_slug = pp-wordpress-tweaks
 plugin_file = WordPressTweaks.php
+plugin_translation_template = l10n/$(plugin_slug).pot
 
 # Git repository URLs
 plugin_repo_url = https://github.com/ppfeufer/${plugin_slug}
