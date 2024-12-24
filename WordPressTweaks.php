@@ -52,9 +52,12 @@ define(
     value: plugin_basename(file: __FILE__)
 );
 
+// Plugin source path
+const PLUGIN_SOURCE_PATH = PLUGIN_DIR_PATH . 'Sources/';
+
 // Include the autoloader and the libraries autoloader
-require_once PLUGIN_DIR_PATH . 'Sources/autoloader.php';
-require_once PLUGIN_DIR_PATH . 'Sources/Libs/autoload.php';
+require_once PLUGIN_SOURCE_PATH . 'autoloader.php';
+require_once PLUGIN_SOURCE_PATH . 'Libs/autoload.php';
 // phpcs:enable
 
 // Load the plugin's main class.

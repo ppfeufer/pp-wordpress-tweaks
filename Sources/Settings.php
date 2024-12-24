@@ -26,7 +26,7 @@ class Settings {
      */
     public function __construct() {
         $this->wpsf = new WordPressSettingsFramework(
-            settings_file: PLUGIN_DIR_PATH . 'Settings/WordPressTweaksSettings.php',
+            settings_file: PLUGIN_SOURCE_PATH . 'Settings/WordPressTweaksSettings.php',
             option_group: 'pp-wordpress-tweaks'
         );
 
