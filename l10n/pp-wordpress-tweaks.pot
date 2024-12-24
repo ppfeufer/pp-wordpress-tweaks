@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-12-09T03:43:04+00:00\n"
+"POT-Creation-Date: 2024-12-24T17:01:20+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: pp-wordpress-tweaks\n"
@@ -39,14 +39,6 @@ msgstr ""
 msgid "https://ppfeufer.de"
 msgstr ""
 
-#: Settings/WordPressTweaksSettings.php:20
-msgid "Available Tweaks"
-msgstr ""
-
-#: Settings/WordPressTweaksSettings.php:21
-msgid "Select which tweaks you want to apply …"
-msgstr ""
-
 #: Sources/Settings.php:73
 msgid "WP Tweaks Settings"
 msgstr ""
@@ -57,6 +49,14 @@ msgstr ""
 
 #: Sources/Settings.php:91
 msgid "Plugin Settings"
+msgstr ""
+
+#: Sources/Settings/WordPressTweaksSettings.php:20
+msgid "Available Tweaks"
+msgstr ""
+
+#: Sources/Settings/WordPressTweaksSettings.php:21
+msgid "Select which tweaks you want to apply …"
 msgstr ""
 
 #: Sources/Tweaks/AutoUpdateMails.php:66
