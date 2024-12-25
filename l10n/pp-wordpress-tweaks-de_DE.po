@@ -4,19 +4,17 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Tweaks 1.0.0\n"
-"Report-Msgid-Bugs-To: https://github.com/ppfeufer/pp-wordpress-tweaks/"
-"issues\n"
-"POT-Creation-Date: 2024-12-09T03:43:04+00:00\n"
-"PO-Revision-Date: 2024-07-31 09:41+0000\n"
+"Report-Msgid-Bugs-To: https://github.com/ppfeufer/pp-wordpress-tweaks/issues\n"
+"POT-Creation-Date: 2024-12-25T16:33:00+00:00\n"
+"PO-Revision-Date: 2024-12-25 16:32+0000\n"
 "Last-Translator: Peter Pfeufer <info@ppfeufer.de>\n"
-"Language-Team: German <https://weblate.ppfeufer.de/projects/wordpress-"
-"plugins/wordpress-tweaks/de/>\n"
+"Language-Team: German <https://weblate.ppfeufer.de/projects/wordpress-plugins/wordpress-tweaks/de/>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.6.2\n"
+"X-Generator: Weblate 5.9.2\n"
 "X-Domain: pp-wordpress-tweaks\n"
 
 #. Plugin Name of the plugin
@@ -44,14 +42,6 @@ msgstr "H. Peter Pfeufer"
 msgid "https://ppfeufer.de"
 msgstr "https://ppfeufer.de"
 
-#: Settings/WordPressTweaksSettings.php:20
-msgid "Available Tweaks"
-msgstr "Verfügbare Anpassungen"
-
-#: Settings/WordPressTweaksSettings.php:21
-msgid "Select which tweaks you want to apply …"
-msgstr "Wähle welche Anpassungen angewendet werden sollen …"
-
 #: Sources/Settings.php:73
 msgid "WP Tweaks Settings"
 msgstr "WP Tweaks Einstellungen"
@@ -60,21 +50,25 @@ msgstr "WP Tweaks Einstellungen"
 msgid "WP Tweaks"
 msgstr "WP Tweaks"
 
-#: Sources/Settings.php:91
+#: Sources/Settings.php:92
 msgid "Plugin Settings"
 msgstr "Plugin Einstellungen"
+
+#: Sources/Settings/WordPressTweaksSettings.php:20
+msgid "Available Tweaks"
+msgstr "Verfügbare Anpassungen"
+
+#: Sources/Settings/WordPressTweaksSettings.php:21
+msgid "Select which tweaks you want to apply …"
+msgstr "Wähle welche Anpassungen angewendet werden sollen …"
 
 #: Sources/Tweaks/AutoUpdateMails.php:66
 msgid "Autoupdate email"
 msgstr "Auto-Update E-Mail"
 
 #: Sources/Tweaks/AutoUpdateMails.php:67
-msgid ""
-"Disable the email notifications for automatic updates. This will only "
-"disable the emails for successful updates."
-msgstr ""
-"Deaktiviere die E-Mail-Benachrichtigungen für automatische Updates. Dadurch "
-"werden nur die E-Mails für erfolgreiche Updates deaktiviert."
+msgid "Disable the email notifications for automatic updates. This will only disable the emails for successful updates."
+msgstr "Deaktiviere die E-Mail-Benachrichtigungen für automatische Updates. Dadurch werden nur die E-Mails für erfolgreiche Updates deaktiviert."
 
 #: Sources/Tweaks/Canonical.php:66
 msgid "Canonical link"
@@ -82,7 +76,7 @@ msgstr "Kanonischer Link"
 
 #: Sources/Tweaks/Canonical.php:67
 msgid "Remove the canonical link from the `<head>` section"
-msgstr "Entfernt den kanonischen Link aus dem Abschnitt „<head>“"
+msgstr "Entfernt den kanonischen Link aus dem Abschnitt `<head>`"
 
 #: Sources/Tweaks/Emoji.php:66
 msgid "Emoji support"
@@ -98,32 +92,23 @@ msgstr "Enfold Debug"
 
 #: Sources/Tweaks/EnfoldTheme.php:67
 msgid "Remove the debug from html output when the Enfold theme is used"
-msgstr ""
-"Entfernt das Debug aus der HTML-Ausgabe, wenn das Enfold Theme verwendet wird"
+msgstr "Entfernt das Debug aus der HTML-Ausgabe, wenn das Enfold Theme verwendet wird"
 
 #: Sources/Tweaks/GeneratorName.php:66
 msgid "Generator name"
 msgstr "Generator Name"
 
 #: Sources/Tweaks/GeneratorName.php:67
-msgid ""
-"Remove the `<meta name=\"generator\" content=\"WordPress x.y.z\" />` tag "
-"from the `<head>` section"
-msgstr ""
-"Entfernt das Tag „<meta name=\"generator\" content=\"WordPress x.y.z\" />\" "
-"aus dem Abschnitt „<head>\""
+msgid "Remove the `<meta name=\"generator\" content=\"WordPress x.y.z\" />` tag from the `<head>` section"
+msgstr "Entfernt das Tag `<meta name=\"generator\" content=\"WordPress x.y.z\" />` aus dem Abschnitt `<head>`"
 
 #: Sources/Tweaks/Links.php:66
 msgid "Meta links tags"
 msgstr "Meta Links Tags"
 
 #: Sources/Tweaks/Links.php:67
-msgid ""
-"Remove some definitions from the `<head>` section, like XMLRPC header, RSS "
-"feeds and WLW Manifests"
-msgstr ""
-"Entfernt einige Definitionen aus dem Abschnitt „<head>“, z. B. XMLRPC-"
-"Header, RSS-Feeds und WLW-Manifeste"
+msgid "Remove some definitions from the `<head>` section, like XMLRPC header, RSS feeds and WLW Manifests"
+msgstr "Entfernt einige Definitionen aus dem Abschnitt `<head>`, z. B. XMLRPC-Header, RSS-Feeds und WLW-Manifeste"
 
 #: Sources/Tweaks/Login.php:66
 msgid "Login error messages"
@@ -159,9 +144,7 @@ msgstr "Versionsstrings"
 
 #: Sources/Tweaks/VersionStrings.php:67
 msgid "Remove the WordPress version from the scripts and styles"
-msgstr ""
-"Entfernt die WordPress-Version, welche eingebundenen JavaScript und CSS "
-"angehängt wird"
+msgstr "Entfernt die WordPress-Version, welche eingebundenen JavaScript und CSS angehängt wird"
 
 #: Sources/Tweaks/WooCommerce.php:67
 msgid "Remove the WooCommerce generator tag"
