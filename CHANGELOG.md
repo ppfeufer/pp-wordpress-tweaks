@@ -39,6 +39,7 @@ Section Order:
 
 ### Changed
 
+- `pluginActionsLink` method simplified
 - `Settings` moved into the `Sources` folder, to keep the root folder clean
 
 ### [1.4.0] - 2024-12-09

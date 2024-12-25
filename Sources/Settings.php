@@ -85,11 +85,13 @@ class Settings {
      * @scope public
      */
     public function pluginActionsLink(array $links): array {
-        $new_links = [];
-        $new_links[] = sprintf(
-            '<a href="' . admin_url(path: 'options-general.php?page=pp-wordpress-tweaks-settings') . '">%s</a>',
-            __('Plugin Settings', 'pp-wordpress-tweaks')
-        );
+        $new_links = [
+            sprintf(
+                '<a href="' . admin_url(path: 'options-general.php?page=%1$s') . '">%2$s</a>',
+                'pp-wordpress-tweaks-settings',
+                __('Plugin Settings', 'pp-wordpress-tweaks')
+            )
+        ];
 
         return array_merge($new_links, $links);
     }
