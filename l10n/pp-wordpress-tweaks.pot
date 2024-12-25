@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2024-12-24T17:01:20+00:00\n"
+"POT-Creation-Date: 2024-12-25T16:33:00+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.11.0\n"
 "X-Domain: pp-wordpress-tweaks\n"
@@ -47,7 +47,7 @@ msgstr ""
 msgid "WP Tweaks"
 msgstr ""
 
-#: Sources/Settings.php:91
+#: Sources/Settings.php:92
 msgid "Plugin Settings"
 msgstr ""
 
