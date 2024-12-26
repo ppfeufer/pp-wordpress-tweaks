@@ -52,9 +52,10 @@ class Main {
     public function loadTweaks(): void {
         $tweakClasses = Tweaks::getInstance()->getTweakClasses();
 
-        foreach ($tweakClasses as $tweakClass) {
-            $tweakClass::getInstance()->init();
-        }
+        array_walk(
+            array: $tweakClasses,
+            callback: static fn($tweakClass) => $tweakClass::getInstance()->init()
+        );
     }
 
     /**
@@ -82,7 +83,7 @@ class Main {
         add_action(hook_name: 'init', callback: static function () {
             load_plugin_textdomain(
                 domain: 'pp-wordpress-tweaks',
-                plugin_rel_path: PLUGIN_REL_PATH . '/l10n/'
+                plugin_rel_path: PLUGIN_REL_PATH . '/l10n'
             );
         });
     }
