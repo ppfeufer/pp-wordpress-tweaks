@@ -4,10 +4,10 @@
  * Removing the debug from html output when Enfold theme is used
  */
 
-namespace WordPress\Ppfeufer\Plugin\WordPressTweaks\Tweaks;
+namespace Ppfeufer\Plugin\WordPressTweaks\Tweaks;
 
-use WordPress\Ppfeufer\Plugin\WordPressTweaks\Interfaces\TweakInterface;
-use WordPress\Ppfeufer\Plugin\WordPressTweaks\Singletons\GenericSingleton;
+use Ppfeufer\Plugin\WordPressTweaks\Interfaces\TweakInterface;
+use Ppfeufer\Plugin\WordPressTweaks\Singletons\GenericSingleton;
 
 /**
  * Removing the debug from html output when Enfold theme is used

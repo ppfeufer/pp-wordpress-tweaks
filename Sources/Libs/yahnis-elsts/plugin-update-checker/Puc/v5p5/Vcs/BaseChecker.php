@@ -1,5 +1,5 @@
 <?php
-namespace WordPress\Ppfeufer\Plugin\WordPressTweaks\Libs\YahnisElsts\PluginUpdateChecker\v5p5\Vcs;
+namespace Ppfeufer\Plugin\WordPressTweaks\Libs\YahnisElsts\PluginUpdateChecker\v5p5\Vcs;
 
 if ( !interface_exists(BaseChecker::class, false) ):
 

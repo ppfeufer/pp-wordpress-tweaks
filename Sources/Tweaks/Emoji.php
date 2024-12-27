@@ -4,10 +4,10 @@
  * Remove emoji support
  */
 
-namespace WordPress\Ppfeufer\Plugin\WordPressTweaks\Tweaks;
+namespace Ppfeufer\Plugin\WordPressTweaks\Tweaks;
 
-use WordPress\Ppfeufer\Plugin\WordPressTweaks\Interfaces\TweakInterface;
-use WordPress\Ppfeufer\Plugin\WordPressTweaks\Singletons\GenericSingleton;
+use Ppfeufer\Plugin\WordPressTweaks\Interfaces\TweakInterface;
+use Ppfeufer\Plugin\WordPressTweaks\Singletons\GenericSingleton;
 
 /**
  * Remove emoji support

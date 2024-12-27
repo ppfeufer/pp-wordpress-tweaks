@@ -1,13 +1,13 @@
 <?php
 
-namespace WordPress\Ppfeufer\Plugin\WordPressTweaks\Singletons;
+namespace Ppfeufer\Plugin\WordPressTweaks\Singletons;
 
 use RuntimeException;
 
 /**
  * General Singleton
  *
- * @package WordPress\Ppfeufer\Plugin\WordPressTweaks\Singletons
+ * @package Ppfeufer\Plugin\WordPressTweaks\Singletons
  */
 class GenericSingleton {
     /**

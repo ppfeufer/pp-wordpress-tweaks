@@ -1,21 +1,21 @@
 <?php
 
-use WordPress\Ppfeufer\Plugin\WordPressTweaks\Tweaks;
+use Ppfeufer\Plugin\WordPressTweaks\Tweaks;
 
 /**
  * WordPress Tweaks settings
  *
- * @param array $wpsf_settings The settings fields
+ * @param array $wpsfSettings The settings fields
  *
  * @return array
  */
-function wp_tweaks_settings(array $wpsf_settings): array {
+function wp_tweaks_settings(array $wpsfSettings): array {
     $settingsFields = array_map(
         static fn($tweakClass) => $tweakClass::getInstance()->getSettings(),
         Tweaks::getInstance()->getTweakClasses()
     );
 
-    $wpsf_settings[] = [
+    $wpsfSettings[] = [
         'section_id' => 'pp-wordpress-tweaks',
         'section_title' => __('Available Tweaks', 'pp-wordpress-tweaks'),
         'section_description' => __(
@@ -26,7 +26,7 @@ function wp_tweaks_settings(array $wpsf_settings): array {
         'fields' => $settingsFields
     ];
 
-    return $wpsf_settings;
+    return $wpsfSettings;
 }
 
 // phpcs:disable

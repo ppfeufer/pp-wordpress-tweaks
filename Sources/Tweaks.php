@@ -1,8 +1,8 @@
 <?php
 
-namespace WordPress\Ppfeufer\Plugin\WordPressTweaks;
+namespace Ppfeufer\Plugin\WordPressTweaks;
 
-use WordPress\Ppfeufer\Plugin\WordPressTweaks\Singletons\GenericSingleton;
+use Ppfeufer\Plugin\WordPressTweaks\Singletons\GenericSingleton;
 
 /**
  * Tweaks
@@ -17,20 +17,12 @@ class Tweaks extends GenericSingleton {
      * @access public
      */
     public function getTweakClasses(): array {
-        $tweakClasses = [];
-        $files = glob(pattern: PLUGIN_DIR_PATH . 'Sources/Tweaks/*.php');
-
-        foreach ($files as $file) {
-            $class = '\\WordPress\\Ppfeufer\\Plugin\\WordPressTweaks\\Tweaks\\' . basename(
-                path: $file,
-                suffix: '.php'
-            );
-
-            if (class_exists(class: $class)) {
-                $tweakClasses[] = $class;
-            }
-        }
-
-        return $tweakClasses;
+        return array_filter(
+            array_map(
+                static fn($file) => '\\Ppfeufer\\Plugin\\WordPressTweaks\\Tweaks\\' . basename(path: $file, suffix: '.php'),
+                glob(pattern: PLUGIN_DIR_PATH . '/Sources/Tweaks/*.php')
+            ),
+            static fn($class) => class_exists(class: $class)
+        );
     }
 }

@@ -4,15 +4,15 @@
  * Enable/Disable Auto Update Mails
  */
 
-namespace WordPress\Ppfeufer\Plugin\WordPressTweaks\Tweaks;
+namespace Ppfeufer\Plugin\WordPressTweaks\Tweaks;
 
-use WordPress\Ppfeufer\Plugin\WordPressTweaks\Interfaces\TweakInterface;
-use WordPress\Ppfeufer\Plugin\WordPressTweaks\Singletons\GenericSingleton;
+use Ppfeufer\Plugin\WordPressTweaks\Interfaces\TweakInterface;
+use Ppfeufer\Plugin\WordPressTweaks\Singletons\GenericSingleton;
 
 /**
  * Enable/Disable Auto Update Mails
  *
- * @package WordPress\Ppfeufer\Plugin\WordPressTweaks\Tweaks
+ * @package Ppfeufer\Plugin\WordPressTweaks\Tweaks
  */
 class AutoUpdateMails extends GenericSingleton implements TweakInterface {
     /**

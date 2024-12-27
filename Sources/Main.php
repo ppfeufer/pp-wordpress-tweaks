@@ -1,13 +1,13 @@
 <?php
 
-namespace WordPress\Ppfeufer\Plugin\WordPressTweaks;
+namespace Ppfeufer\Plugin\WordPressTweaks;
 
-use WordPress\Ppfeufer\Plugin\WordPressTweaks\Libs\YahnisElsts\PluginUpdateChecker\v5p5\PucFactory;
+use Ppfeufer\Plugin\WordPressTweaks\Libs\YahnisElsts\PluginUpdateChecker\v5p5\PucFactory;
 
 /**
  * Main plugin class
  *
- * @package WordPress\Ppfeufer\Plugin\WordPressTweaks
+ * @package Ppfeufer\Plugin\WordPressTweaks
  */
 class Main {
     /**
@@ -52,9 +52,10 @@ class Main {
     public function loadTweaks(): void {
         $tweakClasses = Tweaks::getInstance()->getTweakClasses();
 
-        foreach ($tweakClasses as $tweakClass) {
-            $tweakClass::getInstance()->init();
-        }
+        array_walk(
+            array: $tweakClasses,
+            callback: static fn($tweakClass) => $tweakClass::getInstance()->init()
+        );
     }
 
     /**
@@ -66,7 +67,7 @@ class Main {
     public function doUpdateCheck(): void {
         PucFactory::buildUpdateChecker(
             metadataUrl: 'https://github.com/ppfeufer/pp-wordpress-tweaks/',
-            fullPath: PLUGIN_DIR_PATH . 'WordPressTweaks.php',
+            fullPath: PLUGIN_DIR_PATH . '/WordPressTweaks.php',
             slug: 'pp-wordpress-tweaks'
         )->getVcsApi()->enableReleaseAssets();
     }
@@ -82,7 +83,7 @@ class Main {
         add_action(hook_name: 'init', callback: static function () {
             load_plugin_textdomain(
                 domain: 'pp-wordpress-tweaks',
-                plugin_rel_path: PLUGIN_REL_PATH . '/l10n/'
+                plugin_rel_path: PLUGIN_REL_PATH . '/l10n'
             );
         });
     }
