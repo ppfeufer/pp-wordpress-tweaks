@@ -1,6 +1,6 @@
 <?php
 
-namespace WordPress\Ppfeufer\Plugin\WordPressTweaks;
+namespace Ppfeufer\Plugin\WordPressTweaks;
 
 use WordPressSettingsFramework;
 

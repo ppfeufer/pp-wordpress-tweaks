@@ -1,13 +1,13 @@
 <?php
 
-namespace WordPress\Ppfeufer\Plugin\WordPressTweaks;
+namespace Ppfeufer\Plugin\WordPressTweaks;
 
-use WordPress\Ppfeufer\Plugin\WordPressTweaks\Libs\YahnisElsts\PluginUpdateChecker\v5p5\PucFactory;
+use Ppfeufer\Plugin\WordPressTweaks\Libs\YahnisElsts\PluginUpdateChecker\v5p5\PucFactory;
 
 /**
  * Main plugin class
  *
- * @package WordPress\Ppfeufer\Plugin\WordPressTweaks
+ * @package Ppfeufer\Plugin\WordPressTweaks
  */
 class Main {
     /**

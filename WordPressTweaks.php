@@ -4,7 +4,7 @@
  *
  * A collection of personal tweaks for WordPress.
  *
- * @package WordPress\Ppfeufer\Plugin\WordPressTweaks
+ * @package Ppfeufer\Plugin\WordPressTweaks
  * @author H. Peter Pfeufer
  * @license GPL-3.0-or-later
  * @version 1.4.0
@@ -24,7 +24,7 @@
  * License URI: https://github.com/ppfeufer/pp-wordpress-tweaks/blob/master/LICENSE
  */
 
-namespace WordPress\Ppfeufer\Plugin\WordPressTweaks;
+namespace Ppfeufer\Plugin\WordPressTweaks;
 
 // phpcs:disable
 

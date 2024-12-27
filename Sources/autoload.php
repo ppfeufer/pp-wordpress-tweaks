@@ -1,13 +1,13 @@
 <?php
 
-namespace WordPress\Ppfeufer\Plugin\WordPressTweaks;
+namespace Ppfeufer\Plugin\WordPressTweaks;
 
 use Exception;
 use RuntimeException;
 
 // Register the autoloader.
 // phpcs:disable
-spl_autoload_register(callback: '\WordPress\Ppfeufer\Plugin\WordPressTweaks\autoload');
+spl_autoload_register(callback: '\Ppfeufer\Plugin\WordPressTweaks\autoload');
 // phpcs:enable
 
 /**
@@ -16,7 +16,7 @@ spl_autoload_register(callback: '\WordPress\Ppfeufer\Plugin\WordPressTweaks\auto
  *
  * @param string $className The name of the class to load
  * @return void
- * @package WordPress\Ppfeufer\Plugin\WordPressTweaks
+ * @package Ppfeufer\Plugin\WordPressTweaks
  */
 function autoload(string $className): void {
     // Check if the class name starts with the base namespace or includes `Libs' in the path

@@ -1,6 +1,6 @@
 <?php
 
-use WordPress\Ppfeufer\Plugin\WordPressTweaks\Tweaks;
+use Ppfeufer\Plugin\WordPressTweaks\Tweaks;
 
 /**
  * WordPress Tweaks settings

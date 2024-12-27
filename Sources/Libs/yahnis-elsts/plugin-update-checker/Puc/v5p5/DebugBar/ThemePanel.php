@@ -1,8 +1,8 @@
 <?php
 
-namespace WordPress\Ppfeufer\Plugin\WordPressTweaks\Libs\YahnisElsts\PluginUpdateChecker\v5p5\DebugBar;
+namespace Ppfeufer\Plugin\WordPressTweaks\Libs\YahnisElsts\PluginUpdateChecker\v5p5\DebugBar;
 
-use WordPress\Ppfeufer\Plugin\WordPressTweaks\Libs\YahnisElsts\PluginUpdateChecker\v5p5\Theme\UpdateChecker;
+use Ppfeufer\Plugin\WordPressTweaks\Libs\YahnisElsts\PluginUpdateChecker\v5p5\Theme\UpdateChecker;
 
 if ( !class_exists(ThemePanel::class, false) ):
 
