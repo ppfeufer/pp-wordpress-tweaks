@@ -37,10 +37,24 @@ Section Order:
 ### Security
 -->
 
+### [1.5.0] - 2024-12-27
+
+### Fixed
+
+- Ignore `/Libs` in our own autoloader
+
 ### Changed
 
 - `pluginActionsLink` method simplified
 - `Settings` moved into the `Sources` folder, to keep the root folder clean
+- Use array functions instead of foreach loops
+- Make the autoloader namespace-aware
+- Translations updated
+
+### Removed
+
+- Unnecessary trailing slashes
+- `Wordpress` part from the namespace
 
 ### [1.4.0] - 2024-12-09
 
