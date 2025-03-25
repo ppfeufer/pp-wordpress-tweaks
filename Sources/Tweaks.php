@@ -19,7 +19,7 @@ class Tweaks extends GenericSingleton {
     public function getTweakClasses(): array {
         return array_filter(
             array_map(
-                static fn($file) => '\\Ppfeufer\\Plugin\\WordPressTweaks\\Tweaks\\' . basename(path: $file, suffix: '.php'),
+                static fn($file) => '\\' . __NAMESPACE__ . '\\Tweaks\\' . basename(path: $file, suffix: '.php'),
                 glob(pattern: PLUGIN_DIR_PATH . '/Sources/Tweaks/*.php')
             ),
             static fn($class) => class_exists(class: $class)
