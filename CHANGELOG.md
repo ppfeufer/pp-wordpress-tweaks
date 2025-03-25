@@ -37,6 +37,10 @@ Section Order:
 ### Security
 -->
 
+### Changed
+
+- Use `__NAMESPACE__` instead of hardcoded namespace when appropriate
+
 ### [1.5.0] - 2024-12-27
 
 ### Fixed
