@@ -37,6 +37,10 @@ Section Order:
 ### Security
 -->
 
+### Fixed
+
+- Fatal error: Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class Ppfeufer\\Plugin\\WordPressTweaks\\Tweaks\\Emoji does not have a method "disableTinymceEmojicons"
+
 ### Changed
 
 - Use `__NAMESPACE__` instead of hardcoded namespace when appropriate
