@@ -71,6 +71,17 @@ class Emoji extends GenericSingleton implements TweakInterface {
     }
 
     /**
+     * Disable the tinymce emojicons
+     *
+     * @param array $plugins The plugins
+     * @return array
+     * @access public
+     */
+    public function disableTinymceEmojicons(array $plugins): array {
+        return array_diff($plugins, ['wpemoji']);
+    }
+
+    /**
      * Execute the filters and so on
      *
      * @return void
