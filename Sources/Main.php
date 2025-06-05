@@ -2,7 +2,7 @@
 
 namespace Ppfeufer\Plugin\WordPressTweaks;
 
-use Ppfeufer\Plugin\WordPressTweaks\Libs\YahnisElsts\PluginUpdateChecker\v5p5\PucFactory;
+use Ppfeufer\Plugin\WordPressTweaks\Libs\YahnisElsts\PluginUpdateChecker\v5p6\PucFactory;
 
 /**
  * Main plugin class

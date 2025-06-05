@@ -1,3 +1,4 @@
 /node_modules*
 /vendor*
 /pp-wordpress-tweaks.zip
+bin/strauss.phar
