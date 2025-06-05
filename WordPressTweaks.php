@@ -7,13 +7,13 @@
  * @package Ppfeufer\Plugin\WordPressTweaks
  * @author H. Peter Pfeufer
  * @license GPL-3.0-or-later
- * @version 1.6.0
+ * @version 1.6.1
  *
  * @wordpress-plugin
  * Plugin Name: WordPress Tweaks
  * Plugin URI: https://github.com/ppfeufer/pp-wordpress-tweaks
  * Description: A collection of personal tweaks for WordPress.
- * Version: 1.6.0
+ * Version: 1.6.1
  * Requires at least: 6.0
  * Requires PHP: 8.2
  * Author: H. Peter Pfeufer

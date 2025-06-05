@@ -37,23 +37,29 @@ Section Order:
 ### Security
 -->
 
+### [1.6.1] - 2025-06-05
+
+#### Changed
+
+- Translations updated
+
 ### [1.6.0] - 2025-04-28
 
-### Fixed
+#### Fixed
 
 - Fatal error: Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, class Ppfeufer\\Plugin\\WordPressTweaks\\Tweaks\\Emoji does not have a method "disableTinymceEmojicons"
 
-### Changed
+#### Changed
 
 - Use `__NAMESPACE__` instead of hardcoded namespace when appropriate
 
 ### [1.5.0] - 2024-12-27
 
-### Fixed
+#### Fixed
 
 - Ignore `/Libs` in our own autoloader
 
-### Changed
+#### Changed
 
 - `pluginActionsLink` method simplified
 - `Settings` moved into the `Sources` folder, to keep the root folder clean
