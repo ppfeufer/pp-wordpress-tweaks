@@ -30,7 +30,7 @@ class Main {
         $this->loadSettings();
         $this->loadTweaks();
         $this->doUpdateCheck();
-        $this->initializeHooks();
+//        $this->initializeHooks();
     }
 
     /**
@@ -80,11 +80,11 @@ class Main {
      */
     private function initializeHooks(): void {
         // Load the text domain.
-        add_action(hook_name: 'init', callback: static function () {
-            load_plugin_textdomain(
-                domain: 'pp-wordpress-tweaks',
-                plugin_rel_path: PLUGIN_REL_PATH . '/l10n'
-            );
-        });
+//        add_action(hook_name: 'init', callback: static function () {
+//            load_plugin_textdomain(
+//                domain: 'pp-wordpress-tweaks',
+//                plugin_rel_path: PLUGIN_REL_PATH . '/l10n'
+//            );
+//        });
     }
 }
