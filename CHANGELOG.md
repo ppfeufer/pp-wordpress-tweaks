@@ -37,6 +37,13 @@ Section Order:
 ### Security
 -->
 
+### [1.6.1] - 2025-10-08
+
+#### Changed
+
+- Translations updated
+- Project dependencies updated
+
 ### [1.6.0] - 2025-04-28
 
 #### Fixed
