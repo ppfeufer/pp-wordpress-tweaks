@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Tweaks 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/ppfeufer/pp-wordpress-tweaks/issues\n"
-"POT-Creation-Date: 2025-04-28T05:19:05+00:00\n"
-"PO-Revision-Date: 2025-04-17 08:24+0000\n"
+"POT-Creation-Date: 2025-10-08T05:17:50+00:00\n"
+"PO-Revision-Date: 2025-08-14 20:41+0000\n"
 "Last-Translator: s0k0l -_- <salarysalo@gmail.com>\n"
 "Language-Team: Ukrainian <https://weblate.ppfeufer.de/projects/wordpress-plugins/wordpress-tweaks/uk/>\n"
 "Language: uk\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.12.2\n"
 "X-Domain: pp-wordpress-tweaks\n"
 
 #. Plugin Name of the plugin
@@ -66,11 +66,11 @@ msgstr "Оберіть твіки, які бажаєте застосувати 
 
 #: Sources/Tweaks/AutoUpdateMails.php:66
 msgid "Autoupdate email"
-msgstr "Пошта автооновлення"
+msgstr "Автооновлення пошти"
 
 #: Sources/Tweaks/AutoUpdateMails.php:67
 msgid "Disable the email notifications for automatic updates. This will only disable the emails for successful updates."
-msgstr "Вимкнути поштові нагадування про успішні автоматичні оновлення. Це відключить тільки листи про успішні оновлення."
+msgstr "Вимкнути поштові нагадування про автоматичні оновлення. Це відключить тільки листи про успішні оновлення."
 
 #: Sources/Tweaks/Canonical.php:66
 msgid "Canonical link"
