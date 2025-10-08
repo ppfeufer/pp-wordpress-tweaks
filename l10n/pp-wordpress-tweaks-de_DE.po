@@ -1,12 +1,12 @@
 # Copyright (C) 2024 Peter Pfeufer
 # This file is distributed under the GPL-3+.
-# Peter Pfeufer <info@ppfeufer.de>, 2024.
+# Peter Pfeufer <info@ppfeufer.de>, 2024, 2025.
 msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Tweaks 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/ppfeufer/pp-wordpress-tweaks/issues\n"
-"POT-Creation-Date: 2025-04-28T05:19:05+00:00\n"
-"PO-Revision-Date: 2024-12-25 16:32+0000\n"
+"POT-Creation-Date: 2025-10-08T05:17:50+00:00\n"
+"PO-Revision-Date: 2025-10-02 13:44+0000\n"
 "Last-Translator: Peter Pfeufer <info@ppfeufer.de>\n"
 "Language-Team: German <https://weblate.ppfeufer.de/projects/wordpress-plugins/wordpress-tweaks/de/>\n"
 "Language: de_DE\n"
@@ -14,7 +14,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.9.2\n"
+"X-Generator: Weblate 5.13.3\n"
 "X-Domain: pp-wordpress-tweaks\n"
 
 #. Plugin Name of the plugin
@@ -60,7 +60,7 @@ msgstr "Verfügbare Anpassungen"
 
 #: Sources/Settings/WordPressTweaksSettings.php:21
 msgid "Select which tweaks you want to apply …"
-msgstr "Wähle welche Anpassungen angewendet werden sollen …"
+msgstr "Wähle, welche Anpassungen angewendet werden sollen …"
 
 #: Sources/Tweaks/AutoUpdateMails.php:66
 msgid "Autoupdate email"
