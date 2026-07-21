@@ -2,7 +2,7 @@
 
 namespace Ppfeufer\Plugin\WordPressTweaks;
 
-use Ppfeufer\Plugin\WordPressTweaks\Libs\YahnisElsts\PluginUpdateChecker\v5p6\PucFactory;
+use Ppfeufer\Plugin\WordPressTweaks\Libs\YahnisElsts\PluginUpdateChecker\v5p7\PucFactory;
 
 /**
  * Main plugin class
@@ -27,10 +27,10 @@ class Main {
      * @access public
      */
     public function init(): void {
+        $this->doUpdateCheck();
+        $this->loadTranslationHook();
         $this->loadSettings();
         $this->loadTweaks();
-        $this->doUpdateCheck();
-//        $this->initializeHooks();
     }
 
     /**
@@ -66,9 +66,9 @@ class Main {
      */
     public function doUpdateCheck(): void {
         PucFactory::buildUpdateChecker(
-            metadataUrl: 'https://github.com/ppfeufer/pp-wordpress-tweaks/',
+            metadataUrl: PLUGIN_GITHUB_URL,
             fullPath: PLUGIN_DIR_PATH . '/WordPressTweaks.php',
-            slug: 'pp-wordpress-tweaks'
+            slug: PLUGIN_SLUG
         )->getVcsApi()->enableReleaseAssets();
     }
 
@@ -78,13 +78,13 @@ class Main {
      * @return void
      * @access private
      */
-    private function initializeHooks(): void {
+    private function loadTranslationHook(): void {
         // Load the text domain.
-//        add_action(hook_name: 'init', callback: static function () {
-//            load_plugin_textdomain(
-//                domain: 'pp-wordpress-tweaks',
-//                plugin_rel_path: PLUGIN_REL_PATH . '/l10n'
-//            );
-//        });
+        add_action(hook_name: 'init', callback: static function () {
+            load_plugin_textdomain(
+                domain: PLUGIN_SLUG,
+                plugin_rel_path: PLUGIN_REL_PATH . '/l10n'
+            );
+        });
     }
 }

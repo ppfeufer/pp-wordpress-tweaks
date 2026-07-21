@@ -6,6 +6,7 @@
  *
  * @package Ppfeufer\Plugin\WordPressTweaks
  * @author H. Peter Pfeufer
+ * @copyright 2021 H. Peter Pfeufer
  * @license GPL-3.0-or-later
  * @version 1.6.1
  *
@@ -77,6 +78,16 @@ const PLUGIN_DIR_PATH = __DIR__;
  * Plugin source path (without trailing slash)
  */
 const PLUGIN_SOURCE_PATH = PLUGIN_DIR_PATH . '/Sources';
+
+/**
+ * Plugin slug
+ */
+const PLUGIN_SLUG = 'pp-wordpress-tweaks';
+
+/**
+ * Plugin GitHub URL
+ */
+const PLUGIN_GITHUB_URL = 'https://github.com/ppfeufer/' . PLUGIN_SLUG . '/';
 
 /**
  * Plugin library path (without trailing slash)
