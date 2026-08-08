@@ -1,5 +1,5 @@
 {
-    "name": "download-button-shortcode",
+    "name": "pp-wordpress-tweaks",
     "type": "module",
     "devDependencies": {
         "@eslint/js": "^10.0.1",
