@@ -1,5 +1,6 @@
 {
-    "name": "pp-wordpress-tweaks",
+    "name": "@ppfeufer/pp-wordpress-tweaks",
+    "version": "1.6.1",
     "type": "module",
     "devDependencies": {
         "@eslint/js": "^10.0.1",
