@@ -37,6 +37,11 @@ Section Order:
 ### Security
 -->
 
+#### Changed
+
+- Minimum PHP version raised to 8.4
+- Translations updated
+
 ### [1.6.1] - 2025-10-08
 
 #### Changed

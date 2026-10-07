@@ -16,7 +16,7 @@
  * Description: A collection of personal tweaks for WordPress.
  * Version: 1.6.1
  * Requires at least: 6.0
- * Requires PHP: 8.2
+ * Requires PHP: 8.4
  * Author: H. Peter Pfeufer
  * Author URI: https://ppfeufer.de
  * Text Domain: pp-wordpress-tweaks
