@@ -4,7 +4,7 @@ Donate link: https://ko-fi.com/ppfeufer
 Tags: customization, tweaks
 Requires at least: 6.0
 Tested up to: 6.8
-Requires PHP: 8.2
+Requires PHP: 8.4
 License: GPLv3 or later
 License URI: https://github.com/ppfeufer/pp-wordpress-tweaks/blob/master/LICENSE
 
