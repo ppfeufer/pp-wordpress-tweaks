@@ -2,13 +2,13 @@
 # This file is distributed under the GPLv3.
 # Languages add-on <noreply-addon-languages@weblate.org>, 2024.
 # Peter Pfeufer <info@ppfeufer.de>, 2024, 2025.
-# s0k0l -_- <salarysalo@gmail.com>, 2025.
+# s0k0l -_- <salarysalo@gmail.com>, 2025, 2026.
 msgid ""
 msgstr ""
 "Project-Id-Version: WordPress Tweaks 1.0.0\n"
 "Report-Msgid-Bugs-To: https://github.com/ppfeufer/pp-wordpress-tweaks/issues\n"
-"POT-Creation-Date: 2025-10-08T05:17:50+00:00\n"
-"PO-Revision-Date: 2025-08-14 20:41+0000\n"
+"POT-Creation-Date: 2026-10-07T10:10:57+00:00\n"
+"PO-Revision-Date: 2026-09-16 00:51+0000\n"
 "Last-Translator: s0k0l -_- <salarysalo@gmail.com>\n"
 "Language-Team: Ukrainian <https://weblate.ppfeufer.de/projects/wordpress-plugins/wordpress-tweaks/uk/>\n"
 "Language: uk\n"
@@ -16,31 +16,31 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 5.12.2\n"
+"X-Generator: Weblate 2026.9.1\n"
 "X-Domain: pp-wordpress-tweaks\n"
 
 #. Plugin Name of the plugin
-#: WordPressTweaks.php
+#: WordPressTweaks.php:14
 msgid "WordPress Tweaks"
 msgstr "Твіки Вордпресу"
 
 #. Plugin URI of the plugin
-#: WordPressTweaks.php
+#: WordPressTweaks.php:15
 msgid "https://github.com/ppfeufer/pp-wordpress-tweaks"
 msgstr "https://github.com/ppfeufer/pp-wordpress-tweaks"
 
 #. Description of the plugin
-#: WordPressTweaks.php
+#: WordPressTweaks.php:16
 msgid "A collection of personal tweaks for WordPress."
 msgstr "Колекція персональних твіків Вордпресу."
 
 #. Author of the plugin
-#: WordPressTweaks.php
+#: WordPressTweaks.php:20
 msgid "H. Peter Pfeufer"
 msgstr "H. Peter Pfeufer"
 
 #. Author URI of the plugin
-#: WordPressTweaks.php
+#: WordPressTweaks.php:21
 msgid "https://ppfeufer.de"
 msgstr "https://ppfeufer.de"
 
@@ -106,7 +106,7 @@ msgstr "Прибрати `<meta name=\"generator\" content=\"WordPress x.y.z\" /
 
 #: Sources/Tweaks/Links.php:66
 msgid "Meta links tags"
-msgstr "Таги мєта лінків"
+msgstr "Таги мєталінків"
 
 #: Sources/Tweaks/Links.php:67
 msgid "Remove some definitions from the `<head>` section, like XMLRPC header, RSS feeds and WLW Manifests"
