@@ -1,3 +1,9 @@
 /node_modules*
 /vendor*
+
+/*.min.css
+/*.min.css.map
+/*.min.js
+/*.min.js.map
+
 /pp-wordpress-tweaks.zip
